@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentoria Match</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro para Mentoria</h1>
+
+    <form id="formCadastro" class="form">
+      <label for="nome">Seu nome completo:</label>
+      <input type="text" id="nome" placeholder="Ex: Maria Silva" required />
+
+      <label for="email">Seu e-mail:</label>
+      <input type="email" id="email" placeholder="exemplo@email.com" required />
+
+      <label for="tipo">Você deseja ser:</label>
+      <select id="tipo" required>
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="mentor">Mentor</option>
+        <option value="mentorado">Mentorado</option>
+      </select>
+
+      <label>Assuntos/Temas da Mentoria (até 5):</label>
+      <div id="temasContainer" class="temas-container">
+        <input type="text" id="temaInput" placeholder="Digite um tema" />
+        
+        <select id="nivelTema">
+          <option value="" disabled selected>Selecione o nível</option>
+          <option value="iniciante">Iniciante</option>
+          <option value="intermediario">Intermediário</option>
+          <option value="avancado">Avançado</option>
+        </select>
+
+        <button type="button" id="addTemaBtn">Adicionar</button>
+
+        <ul id="listaTemas" class="lista-temas"></ul>
+      </div>
+
+      <label>Disponibilidade (marque os dias e horários):</label>
+      <div class="disponibilidade-container">
+        <div class="dias">
+          <label><input type="checkbox" name="dias" value="Segunda" /> Segunda</label>
+          <label><input type="checkbox" name="dias" value="Terça" /> Terça</label>
+          <label><input type="checkbox" name="dias" value="Quarta" /> Quarta</label>
+          <label><input type="checkbox" name="dias" value="Quinta" /> Quinta</label>
+          <label><input type="checkbox" name="dias" value="Sexta" /> Sexta</label>
+          <label><input type="checkbox" name="dias" value="Sábado" /> Sábado</label>
+          <label><input type="checkbox" name="dias" value="Domingo" /> Domingo</label>
+        </div>
+        <div class="horarios">
+          <label><input type="checkbox" name="horarios" value="Manhã" /> Manhã</label>
+          <label><input type="checkbox" name="horarios" value="Tarde" /> Tarde</label>
+          <label><input type="checkbox" name="horarios" value="Noite" /> Noite</label>
+        </div>
+        <div class="frequencia">
+          <label for="frequencia">Frequência:</label>
+          <select id="frequencia">
+            <option value="1horaSemana">1 hora por semana</option>
+            <option value="2horasSemana">2 horas por semana</option>
+            <option value="1horaQuinzenal">1 hora a cada 15 dias</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit">Enviar cadastro</button>
+    </form>
+
+    <div id="feedback" class="feedback"></div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

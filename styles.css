@@ -1,0 +1,189 @@
+/* Reset e estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f0fe; /* azul claro */
+  color: #05294f; /* azul marinho escuro */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(5, 41, 79, 0.1);
+}
+
+h1 {
+  color: #05294f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 2px solid #a1caff; /* azul claro */
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #05294f;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.temas-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#temaInput {
+  width: calc(70% - 12px);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#nivelTema {
+  width: calc(25% - 12px);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#addTemaBtn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 15px;
+  background-color: #f5b700; /* amarelo */
+  border: none;
+  border-radius: 4px;
+  color: #05294f;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addTemaBtn:hover {
+  background-color: #d49e00;
+}
+
+.lista-temas {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.lista-temas li {
+  background-color: #d9eaff; /* azul claro */
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #05294f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista-temas button {
+  background-color: #05294f; /* azul marinho */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.lista-temas button:hover {
+  background-color: #03306c;
+}
+
+.disponibilidade-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.dias,
+.horarios,
+.frequencia {
+  flex-basis: 30%;
+  min-width: 150px;
+}
+
+.dias label,
+.horarios label {
+  display: block;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.frequencia select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #a1caff;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #05294f;
+}
+
+.btn-submit {
+  margin-top: 25px;
+  background-color: #05294f;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #03417e;
+}
+
+.feedback {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: none;
+}
+
+.feedback-info {
+  background-color: #d9eaff;
+  color: #05294f;
+  display: block;
+}
+
+.feedback-success {
+  background-color: #b7f0b1;
+  color: #1a4d07;
+  display: block;
+}
+
+.feedback-error {
+  background-color: #f0b1b1;
+  color: #7a1a1a;
+  display: block;
+}
